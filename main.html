@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Веб калькулятор</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h2>Калькулятор 1</h2>
+
+            <form id="fuelForm">
+                <div class="input-group">
+                    Водень,%: <input type="number" id="H" name="hp">
+                </div>
+                <div class="input-group">
+                    Вуглець,%: <input type="number" id="C" name="cp">
+                </div>
+                <div class="input-group">
+                    Сірка,%: <input type="number" id="S" name="sp">
+                </div>
+                <div class="input-group">
+                    Азот,%: <input type="number" id="N" name="np">
+                </div>
+                <div class="input-group">
+                    Кисень,%: <input type="number" id="O" name="op">
+                </div>
+                <div class="input-group">
+                    Волога,%: <input type="number" id="W" name="wp">
+                </div>
+                <div class="input-group">
+                    Зола,%: <input type="number" id="A" name="ap">
+                </div>
+                <input type="button" value="Розрахувати" onclick="cal1()">
+            </form>
+
+            <p id="result"></p>
+        </div>
+
+        <div>
+            <h2>Калькулятор 2</h2>
+
+            <form id="fuelForm2">
+                <div class="input-group">
+                    Вуглець,%: <input type="number" id="C2" name="cf">
+                </div>
+                <div class="input-group">
+                    Водень,%: <input type="number" id="H2" name="hf">
+                </div>
+                <div class="input-group">
+                    Кисень,%: <input type="number" id="O2" name="of">
+                </div>
+                <div class="input-group">
+                    Сірка,%: <input type="number" id="S2" name="sf">
+                </div>
+                <div class="input-group">
+                    Нижча теплота згоряння горючої маси мазуту, МДж/кг;: <input type="number" id="X" name="x1">
+                </div>
+                <div class="input-group">
+                    Вологість робочої маси палива,%: <input type="number" id="Y" name="x2">
+                </div>
+                <div class="input-group">
+                    Зольність сухої маси,%: <input type="number" id="Z" name="x3">
+                </div>
+                <div class="input-group">
+                    Вміст ванадію (V), мг/кг: <input type="number" id="V" name="v">
+                </div>
+                <input type="button" value="Розрахувати" onclick="cal2()">
+            </form>
+
+            <p id="result2"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
